@@ -11,7 +11,7 @@ def tablueau_print(table):
     for i in range(len(x[0])-2):
         x[0][i+2]=f'-X_{x[0][i+2]}'
     for i in range(len(x)-2):
-        x[i+1][0]=f'-X_{x[i+1][0]}'
+        x[i+1][0]=f'X_{x[i+1][0]}'
     df = pd.DataFrame(x)
     #print('Simplex Tableau')
     print(df.to_string(index=False, header=False))
